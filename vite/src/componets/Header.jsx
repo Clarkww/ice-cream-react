@@ -18,6 +18,14 @@ export default function () {
 
   }
 
+  let clickNavItem = () => {
+    setNavOpen(false)
+    // add open class to ul
+    let ul = document.querySelector('ul')
+    ul.classList.remove('nav-open')
+
+  }
+
 
   return (
     <header>
@@ -30,9 +38,9 @@ export default function () {
 
             <ul>
                 <li>
-                    <Link to='/menu'>Menu</Link>
-                    <Link to='/booking'>Book A Table</Link>
-                    <Link to='/contact'>Contact Us</Link>
+                    <Link onClick={clickNavItem} to='/menu'>Menu</Link>
+                    <Link onClick={clickNavItem} to='/booking'>Book A Table</Link>
+                    <Link onClick={clickNavItem} to='/contact'>Contact Us</Link>
                     {/* <Link to='/'>Delivery</Link> */}
 
 

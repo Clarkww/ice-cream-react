@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 
 import cakeImg from '../assets/img/cakes.jpg'
-import cheeseCakeImg from '../assets/img/cheese-cake.jpg'
-import iceCreamImg from '../assets/img/ice-cream-01.jpg'
 
-let images = [cakeImg, cheeseCakeImg]
+import cakeImg2 from '../assets/img/morecakes.jpg'
+
+import store from '../assets/img/store.avif'
+
+
+// import cheeseCakeImg from '../assets/img/cheese-cake.jpg'
+// import iceCreamImg from '../assets/img/ice-cream-01.jpg'
+
+let images = [cakeImg, cakeImg2, store]
 
 // import AiOutlineRight from react-icons/ai
 
